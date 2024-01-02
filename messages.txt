@@ -1,0 +1,27 @@
+Name: Muhammad Haykal
+Email: haykalmuhammad394@gmail.com
+Message: haiii
+
+Name: muhammad haykal
+Email: haykalmuhammad456@gmail.com
+Message: webnya bagus
+
+//pesan untuk balasan komentar
+Subject: Balasan Komentar Anda di [Nama Situs Web Anda]
+
+Halo [Nama Penerima],
+
+Kami ingin mengucapkan terima kasih atas komentar Anda di situs web kami, [Nama Situs Web Anda]. 
+Kami sangat menghargai kontribusi Anda dan ingin memberikan tanggapan singkat:
+
+Komentar Anda:
+[Isi Komentar Pengguna]
+
+Kami berharap Anda tetap berpartisipasi dan terus mengikuti perkembangan [Nama Situs Web Anda]. 
+Jika Anda memiliki pertanyaan tambahan atau ingin memberikan masukan lebih lanjut, jangan ragu untuk menghubungi kami.
+
+Terima kasih lagi atas kontribusi Anda!
+
+Salam hangat,
+[Tanda Tangan Anda]
+

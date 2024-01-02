@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="post" onsubmit="login">
+      <label for="">Email</label>
+      <input type="email" id="Email" name="nama" />
+      <label for="">Password</label>
+      <input type="password" id="Password" name="email" />
+      <input type="button" value="Login" onClick="oke()" />
+    </form>
+    <script>
+      function oke() {
+        var user = document.getElementById("Email").value;
+        var pass = document.getElementById("Password").value;
+
+        if (user == "" && pass == "") {
+          alert("Woyyy isi");
+        } else {
+          alert("Selamat anda berhasil isi");
+        }
+      }
+      oke();
+      
+    </script>
+  </body>
+</html>
