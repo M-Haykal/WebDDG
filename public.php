@@ -1,19 +1,15 @@
 <?php
 $server = "localhost";
-$username = "root"; // Nama pengguna database Anda
-$password = ""; // Kata sandi database Anda
-$database = "hayporto"; // Nama database Anda
+$username = "root"; 
+$password = ""; 
+$database = "hayporto"; 
 
 try {
     $koneksi = new PDO("mysql:host=$server;dbname=$database", $username, $password);
-    // Set mode error menjadi exception
     $koneksi->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    // Menangani pengiriman data proyek
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $title = $_POST["title"];
         $description = $_POST["description"];
-        
-        // Menggunakan prepared statement untuk mencegah SQL injection
         $stmt = $koneksi->prepare("INSERT INTO project (title, description) VALUES (?, ?)");
         $stmt->bindParam(1, $title);
         $stmt->bindParam(2, $description);
@@ -56,7 +52,6 @@ try {
     <section class="hero" id="home">
       <h1>Hello, I'm Muhammad Haykal</h1>
       <p id="typing-text">
-        <!-- I am a junior developer passionate about creating amazing websites. -->
       </p>
       <a
         href="#projek"
@@ -134,7 +129,7 @@ try {
 
       <div class="comments">
         <h2>Comments</h2>
-        <table>
+        <table class="table">
           <thead>
             <tr>
               <th>No</th>
