@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background: linear-gradient(120deg, #2980b9, #8e44ad);
+  overflow-y: visible;
 }
 
 .body h1 h2 {
@@ -82,8 +83,8 @@ body {
 @media (max-width: 768px) {
   .navbar {
     border-radius: 0;
-    background-color: #198754;
-    width: 97%;
+    background-color: transparent;
+    width: 350px;
   }
   .menu {
     display: none;
@@ -227,22 +228,6 @@ section.about {
   line-height: 1.5rem;
 }
 
-/* @media (max-width: 768px) {
-  section.about {
-    flex-direction: column;
-  }
-
-  .foto {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
-  .Deskripsi {
-    flex-basis: 100%;
-    margin-top: 1rem;
-  }
-} */
-
 /* Style untuk section projek */
 .projek {
   padding: 40px;
@@ -259,58 +244,6 @@ section.about {
   text-shadow: 2px 2px 2px white;
 }
 
-/* Style untuk card projek */
-.card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  color: black;
-  text-decoration: none;
-}
-
-.projek-card-link {
-  text-decoration: none;
-  color: black;
-  box-shadow: black;
-}
-
-.projek-card-link:hover {
-  transform: translateY(-5px);
-  
-}
-
-/* Style untuk setiap projek-card */
-.projek-card {
-  width: 300px;
-  margin: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 10px 5px 5px black;
-}
-
-/* Style untuk gambar dalam projek-card */
-.projek-card img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Style untuk judul projek */
-.projek-card h2 {
-  font-size: 24px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-/* Style untuk deskripsi projek */
-.projek-card p {
-  font-size: 16px;
-  color: #777;
-}
-
 .contact {
   padding: 40px;
   text-align: center;
@@ -322,105 +255,26 @@ section.about {
   margin: 10px 0;
 }
 
-main {
+.card-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 50vh;
-  padding: 20px;
-  color: white;
 }
-
-.contact-form {
-  width: 350px;
-  padding: 20px;
-  background-color: rgb(0, 0, 0);
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px white;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 5px;
-  text-align: start;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 350px;
-  padding: 2px;
-  margin-bottom: 10px;
+.card {
+  text-decoration: none;
+  color: black;
+  width: 200px;
+  margin: 20px;
   border: 1px solid #ccc;
-  border-radius: 10px;
-  resize: vertical;
-}
-
-.contact-form textarea {
-  height: 100px;
-}
-
-.contact-form button {
-  padding: 6px 17px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
   cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
-
-.contact-form button[type="submit"] {
-  background-color: #198754;
-  margin-right: 10px;
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-.contact-form button[type="button"] {
-  background-color: #f44336;
-}
-
-.contact-form button:hover {
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  border-radius: 10px;
-}
-
-/* @media screen and (max-width: 768px) {
-  main {
-    width: 300px;
-    display: flex;
-  }
-  .contact {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .contact h1 {
-    font-size: 25px;
-    text-align: center;
-    margin: 5px 0;
-  }
-
-  .contact-form {
-    width: 90%;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    padding: 3px;
-    width: 255px;
-    display: flex;
-  }
-
-  .contact-form textarea {
-    height: 80px;
-  }
-
-  .contact-form button {
-    padding: 8px 16px;
-  }
-} */
 
 footer {
   background-color: black;
@@ -530,13 +384,8 @@ footer p {
   }
 }
 
-
 @keyframes keyframes {
   from {
     width: 0px;
   }
 }
-
-
-
-
