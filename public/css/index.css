@@ -43,6 +43,11 @@ body {
   width: 100%;
 } */
 
+.img-project{
+  width: 60%;
+  height: auto;
+}
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
