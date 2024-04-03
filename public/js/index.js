@@ -93,7 +93,7 @@ function sendMessage() {
   var url =
     "https://api.whatsapp.com/send?phone=" +
     whatsapp +
-    "&text=Halo, nama saya " +
+    "&text=Nama saya " +
     name +
     ". " +
     message;
