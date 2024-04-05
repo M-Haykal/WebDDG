@@ -43,7 +43,9 @@ body {
   width: 100%;
 } */
 
-.img-project{
+
+
+.img-project {
   width: 60%;
   height: auto;
 }
@@ -60,7 +62,7 @@ body {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
-  .card-project{
+  .card-project {
     width: 100px;
     overflow-y: auto;
   }
