@@ -38,12 +38,21 @@ body {
   border-radius: 10px;
 }
 
-/* .skill-card img{
-  height: 100%;
-  width: 100%;
-} */
+.skill-card {
+  transition: transform 0.3s ease;
+}
 
+.skill-card:hover {
+  transform: translateY(-10px);
+}
 
+.card-project {
+  transition: transform 0.3s ease;
+}
+
+.card-project:hover {
+  transform: translateY(-10px);
+}
 
 .img-project {
   width: 60%;
