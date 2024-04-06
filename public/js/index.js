@@ -1,5 +1,3 @@
-AOS.init();
-
 (() => {
   "use strict";
 
@@ -87,6 +85,7 @@ AOS.init();
   });
 })();
 
+AOS.init();
 function sendMessage() {
   var name = document.getElementById("name").value;
   var message = document.getElementById("message").value;
