@@ -25,14 +25,13 @@ body {
 }
 #home {
   background-image: url("https://i.pinimg.com/736x/a0/89/62/a08962a5c36639bdb95264165262c549.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  height: 100%;
-  width: 100%;
+  font-size: 70px;
+  text-align: center;
+  width: 320px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 2px;
 }
 
 #img-profile {
