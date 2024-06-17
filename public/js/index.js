@@ -100,3 +100,34 @@ function sendMessage() {
     message;
   window.open(url);
 }
+
+document.getElementById("filemenote").addEventListener("click", function () {
+  var userConfirmed = confirm(
+    "The demo is an app, are you sure you want to see it?"
+  );
+  if (userConfirmed) {
+    var fileUrl = "public/project/app-release.apk";
+    window.open(fileUrl, "_blank");
+  }
+});
+document
+  .getElementById("filestarperpus")
+  .addEventListener("click", function () {
+    var fileUrl = "public/project/starperpus.apk";
+    window.open(fileUrl, "_blank");
+  });
+
+function filterCards(category) {
+  let cards = document.querySelectorAll("#card-container .col");
+  cards.forEach((card) => {
+    if (category === "all") {
+      card.style.display = "block";
+    } else {
+      if (card.classList.contains(category)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    }
+  });
+}

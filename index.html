@@ -15,11 +15,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="./public/css/index.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
+      href="https://cdn.jsdelivr.net/npm/glightbox@3.1.0/dist/css/glightbox.min.css"
     />
-    <link rel="stylesheet" href="./public/css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.1.0/dist/js/glightbox.min.js"></script>
+
     <title>Portofolio</title>
   </head>
   <body>
@@ -241,7 +243,7 @@
           <span
             class="d-flex align-items-center link-body-emphasis text-decoration-none"
           >
-            <span class="fs-4">Muhammad Haykal</span>
+            <span class="fs-4" id="title"></span>
           </span>
 
           <nav class="navbar d-inline-flex mt-2 mt-md-0 ms-md-auto">
@@ -275,7 +277,7 @@
       </header>
 
       <marquee behavior="" direction="right"
-        ><h1 class="" id="home">Portofolio</h1>
+        ><h1 class="" id="home">Welcome!!</h1>
       </marquee>
 
       <div class="col-xxl-8 px-4 py-5" id="about">
@@ -331,103 +333,103 @@
         </div>
       </div>
 
-      <div class="px-4 py-5" id="skills">
+      <div class="skills px-4 py-5" id="skills">
         <h2 class="pb-2 border-bottom">Skills</h2>
         <div
-          class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-2 d-flex justify-content-center"
+          class="row row-cols-1 row-cols-sm-3 g-3 mt-2"
           data-aos="fade-right"
           data-aos-anchor-placement="top-center"
         >
-          <div class="col m-3">
-            <div class="card skill-card h-100" style="width: 10rem">
+          <div class="col" id="card-skill">
+            <div class="card h-100 shadow">
               <img
                 src="./public/assets/canva.png"
-                class="card-img-top"
-                alt="Canva"
+                class="card-img-top p-0"
+                alt="Canva_logo"
               />
               <div class="card-body">
                 <h5 class="card-title text-center">Canva</h5>
               </div>
             </div>
           </div>
-          <div class="col m-3">
-            <div class="card skill-card h-100" style="width: 10rem">
+          <div class="col" id="card-skill">
+            <div class="card h-100 shadow">
               <img
                 src="./public/assets/figma.png"
-                class="card-img-top"
-                alt="Figma"
+                class="card-img-top p-0"
+                alt="Figma_logo"
               />
               <div class="card-body">
                 <h5 class="card-title text-center">Figma</h5>
               </div>
             </div>
           </div>
-          <div class="col m-3">
-            <div class="card skill-card h-100" style="width: 10rem">
+          <div class="col" id="card-skill">
+            <div class="card h-100 shadow">
               <img
                 src="./public/assets/ai.png"
-                class="card-img-top"
-                alt="Adobe Illustrator"
+                class="card-img-top p-0"
+                alt="Adobe Illustrator_logo"
               />
               <div class="card-body">
                 <h5 class="card-title text-center">Adobe Illustrator</h5>
               </div>
             </div>
           </div>
-          <div class="col m-3">
-            <div class="card skill-card h-100" style="width: 10rem">
+          <div class="col" id="card-skill">
+            <div class="card h-100 shadow">
               <img
                 src="./public/assets/html.png"
-                class="card-img-top"
-                alt="HTML"
+                class="card-img-top p-0"
+                alt="HTML_logo"
               />
               <div class="card-body">
                 <h5 class="card-title text-center">HTML</h5>
               </div>
             </div>
           </div>
-          <div class="col m-3">
-            <div class="card skill-card h-100" style="width: 10rem">
+          <div class="col" id="card-skill">
+            <div class="card h-100 shadow">
               <img
                 src="./public/assets/css.png"
-                class="card-img-top"
-                alt="CSS"
+                class="card-img-top p-0"
+                alt="CSS_logo"
               />
               <div class="card-body">
                 <h5 class="card-title text-center">CSS</h5>
               </div>
             </div>
           </div>
-          <div class="col m-3">
-            <div class="card skill-card h-100" style="width: 10rem">
+          <div class="col" id="card-skill">
+            <div class="card h-100 shadow">
               <img
                 src="./public/assets/Bootstrap.png"
-                class="card-img-top"
-                alt="Framework Bootstrap"
+                class="card-img-top p-0"
+                alt="Bootstrap_logo"
               />
               <div class="card-body">
                 <h5 class="card-title text-center">Bootstrap</h5>
               </div>
             </div>
           </div>
-          <div class="col m-3">
-            <div class="card skill-card h-100" style="width: 10rem">
+          <div class="col" id="card-skill">
+            <div class="card h-100 shadow">
               <img
                 src="./public/assets/flutter.png"
-                class="card-img-top"
-                alt="Flutter"
+                class="card-img-top p-0"
+                alt="Flutter_logo"
               />
               <div class="card-body">
                 <h5 class="card-title text-center">Flutter</h5>
               </div>
             </div>
           </div>
-          <div class="col m-3">
-            <div class="card skill-card h-100" style="width: 10rem">
+          <div class="col" id="card-skill">
+            <div class="card h-100 shadow">
               <img
                 src="./public/assets/laravel.png"
-                class="card-img-top"
-                alt="Laravel"
+                class="card-img-top p-0"
+                alt="Laravel_logo"
               />
               <div class="card-body">
                 <h5 class="card-title text-center">Laravel</h5>
@@ -438,101 +440,472 @@
       </div>
 
       <div class="card-project px-4 py-5" id="project">
-        <h2 class="pb-2 border-bottom">Project</h2>
         <div
-          class="g-4 py-5"
+          class="border-bottom d-flex flex-column flex-md-row justify-content-between"
+        >
+          <h2 class="pb-2 mb-0">Project</h2>
+          <div
+            class="d-grid gap-2 gap-md-3 d-md-flex d-flex mb-2 align-items-center justify-content-center"
+          >
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              onclick="filterCards('all')"
+            >
+              All
+            </button>
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              onclick="filterCards('design')"
+            >
+              Design
+            </button>
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              onclick="filterCards('website')"
+            >
+              Website
+            </button>
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              onclick="filterCards('mobile')"
+            >
+              Mobile
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="row row-cols-1 row-cols-md-3 g-4 py-3"
+          id="card-container"
           data-aos="fade-right"
           data-aos-anchor-placement="top-center"
         >
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4 d-flex justify-content-center mt-2 mb-2">
-                <img
-                  src="./public/assets/Home.png"
-                  class="img-fluid rounded-start img-project"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8 d-flex align-items-center">
-                <div class="card-body">
-                  <h3 class="card-title">Design Mobile Hayshoes</h3>
-                  <p class="card-text">
-                    This design is used for the hayshoes application, using
-                    figma software, with a simple design suitable for mobile
-                    users.
-                  </p>
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a
-                      class="btn btn-outline-success btn-sm px-4 me-md-2"
-                      href="https://www.figma.com/file/ygR9Mviy66z8DGzS28jTkk/HayShoes?type=design&node-id=0%3A1&mode=design&t=8WMZyTS6Nars0Wbp-1"
-                      role="button"
-                      >Source</a
-                    >
-                  </div>
-                </div>
+          <div class="col website">
+            <div
+              class="card h-100 shadow bg-body-tertiary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal1"
+            >
+              <img
+                src="./public/assets/game_tictactoe.png"
+                class="card-img-top"
+                alt="game_tictactoe"
+              />
+              <div class="card-body me-2 ms-2">
+                <h5 class="card-title">Game Tictactoe</h5>
+                <p class="card-text">
+                  This tic tac toe game uses html and css for its appearance,
+                  javascript for its game logic.
+                </p>
               </div>
             </div>
           </div>
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4 d-flex justify-content-center mt-2 mb-2">
-                <img
-                  src="./public/assets/Me_note.png"
-                  class="img-fluid rounded-start img-project"
-                  alt="..."
-                />
-              </div>
-              <div class="col-md-8 d-flex align-items-center">
-                <div class="card-body">
-                  <h3 class="card-title">Design Mobile Application Me Note</h3>
-                  <p class="card-text">
-                    This tic tac toe game uses html and css for its appearance,
-                    javascript for its game logic.
-                  </p>
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a
-                      class="btn btn-outline-success btn-sm px-4 me-md-2"
-                      href="https://www.figma.com/file/kVj4gGPkuEhZnzwsZkZivv/Me-Note?type=design&node-id=9%3A3&mode=design&t=8WMZyTS6Nars0Wbp-1"
-                      role="button"
-                      >Source</a
-                    >
-                  </div>
-                </div>
+          <div class="col mobile">
+            <div
+              class="card h-100 shadow bg-body-tertiary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal2"
+            >
+              <img
+                src="./public/assets/MeNote1.png"
+                class="card-img-top"
+                alt="MeNote"
+              />
+              <div class="card-body me-2 ms-2">
+                <h5 class="card-title">Me Note</h5>
+                <p class="card-text">
+                  Introducing this is a mobile application called MeNote, the
+                  application is made using the dart framework, namely flutter.
+                </p>
               </div>
             </div>
           </div>
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4 d-flex justify-content-center mt-2 mb-2">
-                <img
-                  src="./public/assets/game_tictactoe.png"
-                  class="img-fluid rounded-start img-project"
-                  alt="..."
-                />
+          <div class="col design">
+            <div
+              class="card h-100 shadow bg-body-tertiary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal3"
+            >
+              <img
+                src="./public/assets/Home.png"
+                class="card-img-top"
+                alt="hayshoes"
+              />
+              <div class="card-body me-2 ms-2">
+                <h5 class="card-title">UI Hayshoes</h5>
+                <p class="card-text">
+                  This design is used for the hayshoes application, using figma
+                  software, with a simple design suitable for mobile users.
+                </p>
               </div>
-              <div class="col-md-8 d-flex align-items-center">
-                <div class="card-body">
-                  <h3 class="card-title">Game Tic Tac Toe</h3>
-                  <p class="card-text">
-                    This tic tac toe game uses html and css for its appearance,
-                    javascript for its game logic.
-                  </p>
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a
-                      class="btn btn-outline-success btn-sm px-4 me-md-2"
-                      href="https://github.com/M-Haykal/game-sederhana.git"
-                      role="button"
-                      >Code</a
-                    >
-                    <a
-                      class="btn btn-outline-secondary btn-sm px-4 me-md-2"
-                      href="https://m-haykal.github.io/game-sederhana/"
-                      role="button"
-                      >Demo</a
-                    >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Project -->
+      <section class="modal-project">
+        <div
+          class="modal fade"
+          id="exampleModal1"
+          tabindex="-1"
+          aria-labelledby="exampleModal1Label"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner border rounded">
+                        <div class="carousel-item active">
+                          <img
+                            src="./public/assets/game_tictactoe.png"
+                            class="d-block w-100"
+                            alt="Start Games"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="./public/assets/game_tictactoe2.png"
+                            class="d-block w-100"
+                            alt="playing Games"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="./public/assets/game_tictactoe3.png"
+                            class="d-block w-100"
+                            alt="End Games"
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <h3>Game Web Tictactoe</h3>
+                      <div class="status">
+                        <span class="badge text-bg-light p-2">Website</span>
+                        <span class="badge text-bg-light p-2">Game</span>
+                      </div>
+                      <div class="description mt-2 mb-2">
+                        <p>
+                          This tic tac toe game uses html and css for its
+                          appearance, javascript for its game logic.
+                        </p>
+                      </div>
+                      <div
+                        class="d-grid gap-2 d-md-flex justify-content-md-start"
+                      >
+                        <a
+                          class="btn btn-success btn-sm px-4 me-md-2"
+                          href="https://github.com/M-Haykal/game-sederhana.git"
+                          role="button"
+                          >Code</a
+                        >
+                        <a
+                          class="btn btn-secondary btn-sm px-4 me-md-2"
+                          href="https://m-haykal.github.io/game-sederhana/"
+                          role="button"
+                          >Demo</a
+                        >
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <div class="text-center py-3">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="exampleModal2"
+          tabindex="-1"
+          aria-labelledby="exampleModal2Label"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div id="carouselExampleCaptions2" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions2"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions2"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleCaptions2"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner border rounded">
+                        <div class="carousel-item active">
+                          <img
+                            src="./public/assets/MeNote1.png"
+                            class="d-block w-100"
+                            alt="SplashScreen Me Note"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="./public/assets/MeNote.png"
+                            class="d-block w-100"
+                            alt="Home Me Note"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="./public/assets/MeNote3.png"
+                            class="d-block w-100"
+                            alt="Create note in Me Note"
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions2"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions2"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <h3>Application Me Note</h3>
+                      <div class="status">
+                        <span class="badge text-bg-light p-2">Mobile</span>
+                      </div>
+                      <div class="description mt-2 mb-2">
+                        <p>
+                          Introducing this is a mobile application called
+                          MeNote, the application is made using the dart
+                          framework, namely flutter.
+                        </p>
+                      </div>
+                      <div
+                        class="d-grid gap-2 d-md-flex justify-content-md-start"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-success"
+                          id="filemenote"
+                        >
+                          Demo
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center py-3">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="exampleModal3"
+          tabindex="-1"
+          aria-labelledby="exampleModal3Label"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row mt-3 ms-3 me-3">
+                    <img
+                      src="./public/assets/Home.png"
+                      class="img-thumbnail"
+                      alt="Hayshoes Design"
+                    />
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <h3>Design Apllication Hayshoes</h3>
+                      <div class="status">
+                        <span class="badge text-bg-light p-2">Design</span>
+                      </div>
+                      <div class="description mt-2 mb-2">
+                        <p>
+                          This design is used for the hayshoes application,
+                          using figma software, with a simple design suitable
+                          for mobile users.
+                        </p>
+                      </div>
+                      <div
+                        class="d-grid gap-2 d-md-flex justify-content-md-start"
+                      >
+                        <a
+                          class="btn btn-success btn-sm px-4 me-md-2"
+                          href="https://www.figma.com/file/ygR9Mviy66z8DGzS28jTkk/HayShoes?type=design&node-id=0%3A1&mode=design&t=8WMZyTS6Nars0Wbp-1"
+                          role="button"
+                          >Source</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center py-3">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="modal fade"
+        id="confirmModal"
+        tabindex="-1"
+        aria-labelledby="confirmModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="confirmModalLabel">Confirmation</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Are you sure you want to download the file?
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="confirmDownload"
+              >
+                OK
+              </button>
             </div>
           </div>
         </div>
@@ -591,13 +964,15 @@
       >
         <div class="col-md-4 d-flex align-items-center">
           <span class="mb-3 mb-md-0 text-body-secondary"
-            >&copy; 2024, Muhammad Haykal</span
+            >&copy; 2024 Muhammad Haykal</span
           >
         </div>
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
           <li class="ms-3">
-            <a class="text-body-secondary" href="https://twitter.com/Hekolll_"
-              ><i class="bi bi-twitter-x"></i
+            <a
+              class="text-body-secondary"
+              href="mailto:haykalmuhammad456@gmail.com"
+              ><i class="bi bi-envelope"></i
             ></a>
           </li>
           <li class="ms-3">
@@ -623,4 +998,18 @@
     crossorigin="anonymous"
   ></script>
   <script src="./public/js/index.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+    integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    var typed = new Typed("#title", {
+      strings: ["Muhammad Haykal", "It is my Portfolio"],
+      typeSpeed: 40,
+      backSpeed: 30,
+      loop: true,
+    });
+  </script>
 </html>
