@@ -110,12 +110,15 @@ document.getElementById("filemenote").addEventListener("click", function () {
     window.open(fileUrl, "_blank");
   }
 });
-document
-  .getElementById("filestarperpus")
-  .addEventListener("click", function () {
-    var fileUrl = "public/project/starperpus.apk";
+document.getElementById("filestarperpus").addEventListener("click", function () {
+  var userConfirmed = confirm(
+    "The demo is an app, are you sure you want to see it?"
+  );
+  if (userConfirmed) {
+    var fileUrl = "public/project/StarLibrary.apk";
     window.open(fileUrl, "_blank");
-  });
+  }
+});
 
 function filterCards(category) {
   let cards = document.querySelectorAll("#card-container .col");
