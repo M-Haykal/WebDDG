@@ -238,8 +238,7 @@
     <div class="container py-3">
       <nav class="navbar navbar-expand-md bg-body-transparent p-3">
         <div class="container-fluid">
-          <!-- <span class="navbar-brand m-0" id="title"></span> -->
-          <h5>Muhammad Haykal</h5>
+          <span class="navbar-brand m-0" id="title"></span>
           <button
             class="navbar-toggler"
             type="button"
@@ -274,14 +273,16 @@
         </div>
       </nav>
 
-      <p class="text-center" behavior="" direction="right"
+      <marquee behavior="" direction="right"
         ><span id="greeting" class="home"></span>
-      </p>
+      </marquee>
 
       <div class="col-xxl-8 px-4 py-5" id="about">
         <h2 class="pb-2 border-bottom">About Me</h2>
         <div
           class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5"
+          data-aos="fade-right"
+          data-aos-anchor-placement="center-bottom"
         >
           <div class="col-10 col-sm-8 col-lg-6">
             <img
@@ -334,6 +335,8 @@
         <div
           class="row row-cols-1 row-cols-sm-3 g-3 mt-2"
           id="skills-card"
+          data-aos="fade-right"
+          data-aos-anchor-placement="top-center"
         ></div>
       </div>
 
@@ -379,7 +382,8 @@
         <div
           class="row row-cols-1 row-cols-md-3 g-4 py-3"
           id="card-container"
-          
+          data-aos="fade-right"
+          data-aos-anchor-placement="top-center"
         >
           <!-- View Project -->
         </div>
@@ -468,7 +472,7 @@
       </footer>
     </div>
   </body>
-  //<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>//
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

@@ -13,6 +13,6 @@
 - Typed.js
 - MockApi
 
-## Theme light display
+## Website display
 
-![HayPorto](../IMAGE_PATH/image.png)
+![HayPorto](./public/assets/screenshot/view_website_light.jpg)
