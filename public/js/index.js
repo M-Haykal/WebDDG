@@ -101,32 +101,44 @@ function sendMessage() {
   window.open(url);
 }
 
-document.getElementById("filemenote").addEventListener("click", function () {
-  var userConfirmed = confirm(
-    "The demo is an app, are you sure you want to see it?"
-  );
-  if (userConfirmed) {
-    var fileUrl = "public/project/app-release.apk";
-    window.open(fileUrl, "_blank");
-  }
-});
-document.getElementById("filestarperpus").addEventListener("click", function () {
-  var userConfirmed = confirm(
-    "The demo is an app, are you sure you want to see it?"
-  );
-  if (userConfirmed) {
-    var fileUrl = "public/project/StarLibrary.apk";
-    window.open(fileUrl, "_blank");
-  }
+document.addEventListener("DOMContentLoaded", () => {
+  const apiUrl = "https://667c35de3c30891b865bc3d5.mockapi.io/admin";
+  const cardContainer = document.getElementById("card-container");
+
+  fetch(apiUrl)
+    .then((response) => response.json())
+    .then((data) => {
+      data.forEach((item) => {
+        const card = document.createElement("div");
+        card.className = `col ${item.category.toLowerCase()}`;
+
+        const cardContent = `
+          <div class="card h-100 shadow bg-body-tertiary">
+            <img src="${item.image}" class="card-img-top" loading="lazy" alt="${item.name}" />
+            <div class="card-body me-2 ms-2">
+              <h5 class="card-title">${item.name}</h5>
+              <p class="card-text">${item.description}</p>
+              <a class="btn btn-outline-success mt-3" href="${item.link}" role="button">View</a>
+            </div>
+          </div>
+        `;
+
+        card.innerHTML = cardContent;
+        cardContainer.appendChild(card);
+      });
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+    });
 });
 
 function filterCards(category) {
-  let cards = document.querySelectorAll("#card-container .col");
+  const cards = document.querySelectorAll("#card-container .col");
   cards.forEach((card) => {
     if (category === "all") {
       card.style.display = "block";
     } else {
-      if (card.classList.contains(category)) {
+      if (card.classList.contains(category.toLowerCase())) {
         card.style.display = "block";
       } else {
         card.style.display = "none";
@@ -134,3 +146,95 @@ function filterCards(category) {
     }
   });
 }
+
+function getGreeting() {
+  const now = new Date();
+  const hours = now.getHours();
+
+  let greeting;
+  if (hours >= 5 && hours < 10) {
+    greeting = "Good morning";
+  } else if (hours >= 11 && hours < 15) {
+    greeting = "Good afternoon";
+  } else if (hours >= 16 && hours < 19) {
+    greeting = "Good evening";
+  } else {
+    greeting = "Good night";
+  }
+
+  return greeting;
+}
+
+document.getElementById("greeting").innerText = getGreeting();
+
+// document.addEventListener("contextmenu", (event) => {
+//   alert ("Sorry this is a secret code")
+//   event.preventDefault();
+// });
+
+const skills = [
+  {
+    imgSrc: "./public/assets/canva.png",
+    imgAlt: "Canva_logo",
+    title: "Canva",
+  },
+  {
+    imgSrc: "./public/assets/figma.png",
+    imgAlt: "Figma_logo",
+    title: "Figma",
+  },
+  {
+    imgSrc: "./public/assets/ai.png",
+    imgAlt: "Adobe Illustrator_logo",
+    title: "Adobe Illustrator",
+  },
+  {
+    imgSrc: "./public/assets/html.png",
+    imgAlt: "HTML_logo",
+    title: "HTML",
+  },
+  {
+    imgSrc: "./public/assets/css.png",
+    imgAlt: "CSS_logo",
+    title: "CSS",
+  },
+  {
+    imgSrc: "./public/assets/Bootstrap.png",
+    imgAlt: "Bootstrap_logo",
+    title: "Bootstrap",
+  },
+  {
+    imgSrc: "./public/assets/flutter.png",
+    imgAlt: "Flutter_logo",
+    title: "Flutter",
+  },
+  {
+    imgSrc: "./public/assets/laravel.png",
+    imgAlt: "Laravel_logo",
+    title: "Laravel",
+  },
+  {
+    imgSrc: "./public/assets/java.png",
+    imgAlt: "Java_logo",
+    title: "Java",
+  },
+];
+
+const container = document.getElementById("skills-card");
+skills.forEach((skill) => {
+  const col = document.createElement("div");
+  col.className = "col";
+  col.id = "card-skill";
+
+  const card = `
+    <div class="card h-100 shadow">
+      <img src="${skill.imgSrc}" class="card-img-top p-0" alt="${skill.imgAlt}" />
+      <div class="card-body">
+        <h5 class="card-title text-center">${skill.title}</h5>
+      </div>
+    </div>
+  `;
+
+  col.innerHTML = card;
+  container.appendChild(col);
+});
