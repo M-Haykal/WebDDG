@@ -16,15 +16,9 @@ body {
   max-width: 960px;
 }
 
-.home {
-  background-image: url("https://i.pinimg.com/736x/a0/89/62/a08962a5c36639bdb95264165262c549.jpg");
-  font-size: 60px;
-  text-align: center;
-  width: auto;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  padding: 2px;
+.welcome {
+  width: 500px;
+  height: 350px;
 }
 
 #img-profile {
@@ -51,7 +45,7 @@ body {
   transform: translateY(-10px);
 }
 
-.card-project {
+/* .card-project {
   cursor: pointer;
 }
 
@@ -60,7 +54,7 @@ body {
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
-}
+} */
 
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -143,14 +137,3 @@ body {
 .bd-mode-toggle .dropdown-menu .active .bi {
   display: block !important;
 }
-
-/* .blur {
-  cursor: pointer;
-}
-.blur img {
-  transition: 1s ease;
-}
-
-.blur img:hover {
-  
-} */

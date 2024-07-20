@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const cardContent = `
           <div class="card h-100 shadow bg-body-tertiary">
-            <img src="${item.image}" class="card-img-top" loading="lazy" alt="${item.name}" />
+            <img src="${item.image}" class="card-img-top  img-fluid rounded" loading="lazy" alt="${item.name}" />
             <div class="card-body me-2 ms-2">
               <h5 class="card-title">${item.name}</h5>
               <p class="card-text">${item.description}</p>
@@ -228,7 +228,7 @@ skills.forEach((skill) => {
 
   const card = `
     <div class="card h-100 shadow">
-      <img src="${skill.imgSrc}" class="card-img-top p-0" alt="${skill.imgAlt}" />
+      <img src="${skill.imgSrc}" class="card-img-top p-0  img-fluid" alt="${skill.imgAlt}" />
       <div class="card-body">
         <h5 class="card-title text-center">${skill.title}</h5>
       </div>
