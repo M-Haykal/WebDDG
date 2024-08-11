@@ -199,6 +199,11 @@ const skills = [
     title: "CSS",
   },
   {
+    imgSrc: "./public/assets/javascript.png",
+    imgAlt: "Javascript_logo",
+    title: "Javascript",
+  },
+  {
     imgSrc: "./public/assets/Bootstrap.png",
     imgAlt: "Bootstrap_logo",
     title: "Bootstrap",
@@ -217,6 +222,16 @@ const skills = [
     imgSrc: "./public/assets/java.png",
     imgAlt: "Java_logo",
     title: "Java",
+  },
+  {
+    imgSrc: "./public/assets/express-js.png",
+    imgAlt: "Express_js_logo",
+    title: "Express JS",
+  },
+  {
+    imgSrc: "./public/assets/prisma.png",
+    imgAlt: "Prisma_logo",
+    title: "Prisma",
   },
 ];
 
