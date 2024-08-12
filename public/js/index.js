@@ -233,6 +233,11 @@ const skills = [
     imgAlt: "Prisma_logo",
     title: "Prisma",
   },
+  {
+    imgSrc: "./public/assets/git.png",
+    imgAlt: "Git_Logo",
+    title: "Git",
+  },
 ];
 
 const container = document.getElementById("skills-card");
@@ -243,9 +248,9 @@ skills.forEach((skill) => {
 
   const card = `
     <div class="card h-100 shadow">
-      <img src="${skill.imgSrc}" class="card-img-top p-0  img-fluid" alt="${skill.imgAlt}" />
+      <img src="${skill.imgSrc}" class="card-img-top p-0 img-fluid" alt="${skill.imgAlt}" />
       <div class="card-body">
-        <h5 class="card-title text-center">${skill.title}</h5>
+        <h4 class="card-title text-center">${skill.title}</h4>
       </div>
     </div>
   `;
